@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true },
+  experimental: {
+    // This is needed for Docker deployment
+    outputFileTracingRoot: process.cwd(),
+  },
 };
 
 module.exports = nextConfig;

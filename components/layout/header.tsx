@@ -8,7 +8,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { getNavigation } from "@/lib/utils/permissions";
-import { DivideIcon as LucideIcon, Menu, Bell, Search } from "lucide-react";
+import { Menu, Bell, Search } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import * as Icons from "lucide-react";
 import { cn } from "@/lib/utils";
 

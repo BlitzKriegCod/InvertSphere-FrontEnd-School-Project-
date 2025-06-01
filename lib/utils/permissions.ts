@@ -74,9 +74,17 @@ export const sectionPermissions = {
   }
 };
 
+// Define type for valid section names
+type SectionKey = keyof typeof sectionPermissions;
+
+// Check if a string is a valid section key
+function isSectionKey(key: string): key is SectionKey {
+  return key in sectionPermissions;
+}
+
 // Check if a user has access to a specific section and action
 export function hasAccess(role: Role, section: string, action: 'view' | 'create' | 'edit' | 'delete'): boolean {
-  if (!sectionPermissions[section]) {
+  if (!isSectionKey(section)) {
     return false;
   }
   

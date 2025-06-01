@@ -79,6 +79,7 @@ export default function Home() {
                     Watch Demo
                   </Button>
                 </div>
+                </div>
               </div>
 
               {/* Right Column - Feature Cards */}
@@ -87,43 +88,42 @@ export default function Home() {
                   <div className="absolute -inset-4 bg-gradient-to-r from-emerald-600/20 via-blue-600/20 to-purple-600/20 rounded-3xl blur-xl opacity-30 dark:opacity-20"></div>
                   <div className="relative bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-2xl p-6 shadow-2xl">
                     <div className="grid gap-4">
-                    {/* Feature Card 1 */}
-                    <div className="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-                      <div className="flex-shrink-0 p-2 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg">
-                        <Shield className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                      {/* Feature Card 1 */}
+                      <div className="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
+                        <div className="flex-shrink-0 p-2 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg">
+                          <Shield className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Smart Inventory</h3>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">Track stock levels, set alerts, and automate reordering with AI-powered insights.</p>
+                        </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Smart Inventory</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Track stock levels, set alerts, and automate reordering with AI-powered insights.</p>
-                      </div>
-                    </div>
 
-                    {/* Feature Card 2 */}
-                    <div className="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-                      <div className="flex-shrink-0 p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                        <BarChart2 className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                      {/* Feature Card 2 */}
+                      <div className="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
+                        <div className="flex-shrink-0 p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                          <BarChart2 className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Real-time Analytics</h3>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">Get comprehensive insights into your inventory performance and trends.</p>
+                        </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Real-time Analytics</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Get comprehensive insights into your inventory performance and trends.</p>
-                      </div>
-                    </div>
 
-                    {/* Feature Card 3 */}
-                    <div className="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-                      <div className="flex-shrink-0 p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
-                        <Globe className="h-5 w-5 text-purple-600 dark:text-purple-400" />
+                      {/* Feature Card 3 */}
+                      <div className="flex items-start gap-4 p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
+                        <div className="flex-shrink-0 p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                          <Globe className="h-5 w-5 text-purple-600 dark:text-purple-400" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Multi-Location Support</h3>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">Manage inventory across multiple warehouses and locations seamlessly.</p>
+                        </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Multi-Location Support</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Manage inventory across multiple warehouses and locations seamlessly.</p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </section>
         

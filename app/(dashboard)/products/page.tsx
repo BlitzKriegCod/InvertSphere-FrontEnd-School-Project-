@@ -91,7 +91,7 @@ export default function ProductsPage() {
             <span className="font-medium flex items-center gap-2">
               {product.stock}
               {isLowStock && (
-                <Badge variant="destructive\" className="text-xs">Low</Badge>
+                <Badge variant="destructive" className="text-xs">Low</Badge>
               )}
             </span>
             <span className="text-xs text-muted-foreground">Min: {product.minStock}</span>
@@ -119,7 +119,7 @@ export default function ProductsPage() {
         return (
           <div className="flex items-center gap-2">
             {canEditProduct && (
-              <Button variant="ghost\" size="icon\" className="h-8 w-8">
+              <Button variant="ghost" size="icon" className="h-8 w-8">
                 <Edit className="h-4 w-4" />
                 <span className="sr-only">Edit</span>
               </Button>

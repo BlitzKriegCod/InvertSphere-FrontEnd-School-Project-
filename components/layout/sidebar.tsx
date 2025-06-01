@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { User, Role } from "@/lib/types";
 import { getNavigation } from "@/lib/utils/permissions";
-import { DivideIcon as LucideIcon } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import * as Icons from "lucide-react";
 
 interface SidebarProps {
