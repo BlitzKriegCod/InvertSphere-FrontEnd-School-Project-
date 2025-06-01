@@ -33,7 +33,7 @@ export default function Home() {
                 Log in
               </Button>
             </Link>
-            <Link href="/login">
+            <Link href="/signup">
               <Button className="bg-emerald-600 hover:bg-emerald-700 text-white dark:bg-emerald-500 dark:hover:bg-emerald-600">
                 Sign up
               </Button>
@@ -65,7 +65,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 min-[400px]:flex-row lg:justify-start justify-center">
-                  <Link href="/login" className="inline-flex items-center gap-2">
+                  <Link href="/signup" className="inline-flex items-center gap-2">
                     <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white dark:bg-emerald-500 dark:hover:bg-emerald-600">
                       Get Started Free
                       <ChevronRight className="ml-2 h-4 w-4" />

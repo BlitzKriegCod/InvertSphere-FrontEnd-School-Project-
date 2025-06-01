@@ -15,6 +15,7 @@ interface AuthContextType {
   user: User | null;
   isLoading: boolean;
   login: (email: string, password: string) => Promise<boolean>;
+  signup: (name: string, email: string, password: string) => Promise<boolean>;
   logout: () => void;
   isAuthenticated: boolean;
 }
@@ -78,12 +79,29 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     router.push("/login");
   };
 
+  const signup = async (name: string, email: string, password: string) => {
+    setIsLoading(true);
+    try {
+      // In a real app, this would be an API call to create a user
+      // For this demo, we'll simulate a successful signup
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      setIsLoading(false);
+      return true;
+    } catch (error) {
+      console.error("Signup error:", error);
+      setIsLoading(false);
+      return false;
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
         user,
         isLoading,
         login,
+        signup,
         logout,
         isAuthenticated: !!user
       }}
