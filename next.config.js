@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // For Vercel, we don't need the standalone output
   eslint: {
     ignoreDuringBuilds: true,
-  },
-  experimental: {
-    // This is needed for Docker deployment
-    outputFileTracingRoot: process.cwd(),
   },
 };
 
